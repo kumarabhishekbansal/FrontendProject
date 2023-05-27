@@ -11,10 +11,8 @@ import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import HomeIcon from '@mui/icons-material/Home';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { MDBCardText,
-MDBBtn
 } from "mdb-react-ui-kit";
 import "./style.css";
-import { color } from "@cloudinary/url-gen/qualifiers/background";
 const Work = () => {
   return (
     <>
@@ -37,8 +35,8 @@ const Work = () => {
           <Divider />
         </CardContent>
         <CardActions>
-        <Link to='/register'><Button variant="contained" endIcon={<SendToMobile />} color="primary">Register</Button></Link>
-        <Link to='/login'><Button variant="contained" endIcon={<SendToMobile />} color="secondary">Login</Button></Link>
+        <Link to='/register' ><Button variant="contained" endIcon={<SendToMobile className="card_link_icon"/> } color="primary" className="cardbtn">Register</Button></Link>
+        <Link to='/login'><Button variant="contained" endIcon={<SendToMobile className="card_link_icon" />} color="secondary" className="cardbtn">Login</Button></Link>
         
         </CardActions>
       </Card>
@@ -61,8 +59,8 @@ const Work = () => {
           <Divider />
         </CardContent>
         <CardActions>
-        <Link to='/'><Button variant="contained" endIcon={<HomeIcon />} color="success">Home</Button></Link>
-        <Link to='/cart'><Button variant="contained" endIcon={<ShoppingCartIcon />} color="warning">Cart</Button></Link>
+        <Link to='/'><Button variant="contained" endIcon={<HomeIcon className="card_link_icon" />} color="success" className="cardbtn">Home</Button></Link>
+        <Link to='/cart'><Button variant="contained" endIcon={<ShoppingCartIcon className="card_link_icon" />} color="warning" className="cardbtn" >Cart</Button></Link>
         </CardActions>
       </Card>
 
@@ -81,7 +79,7 @@ const Work = () => {
           <Divider />
         </CardContent>
         <CardActions>
-        <Link to='/cart'><Button variant="contained" endIcon={<ShoppingCartIcon />} color="warning">Cart</Button></Link>
+        <Link to='/cart'><Button variant="contained" endIcon={<ShoppingCartIcon className="card_link_icon" />} color="warning" className="cardbtn">Cart</Button></Link>
         </CardActions>
       </Card>
 
@@ -104,7 +102,7 @@ const Work = () => {
         </CardContent>
         <CardActions>
         
-        <Link to='/menu'><Button variant="contained" endIcon={<RestaurantMenuIcon />} color="success">Menu</Button></Link>
+        <Link to='/menu'><Button variant="contained" endIcon={<RestaurantMenuIcon className="card_link_icon" />} color="success" className="cardbtn">Menu</Button></Link>
           
         </CardActions>
       </Card>

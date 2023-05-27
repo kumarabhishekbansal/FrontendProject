@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import "./NewHome.css";
+import "./newHomemediaqueries.css"
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import contactimg from "../NewHomeImages/contact-bg.jpg";

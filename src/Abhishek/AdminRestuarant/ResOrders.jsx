@@ -4,8 +4,6 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import {
-  MDBBadge,
-  MDBBtn,
   MDBTable,
   MDBTableHead,
   MDBTableBody,
@@ -15,7 +13,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 
 import {
-  resorderreset,
   getresorders,
   updateorders
 } from "../../Reducers/ResOrder/ResOrderSlice";
@@ -23,14 +20,14 @@ import {
 const ResOrders = () => {
   // const orderidref=useRef();
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const { val } = useParams();
   const usedval = JSON.parse(decodeURIComponent(val));
   const { resorder, isLoading, isError, isresSuccess, message } = useSelector(
     (state) => state.ResOrderDetails
   );
   const [userorders, setuserorders] = useState([]);
-  const [totalam, settotalam] = useState(0);
+  // const [totalam, settotalam] = useState(0);
   const [orderid,setorderid]=useState({});
   const[orderstatus,setorderstatus]=useState("Placed");
 
@@ -158,9 +155,9 @@ const ResOrders = () => {
                                   <tr>
                                     <td><b>Discount : {val.orderDetails.amountoff} Rs.</b></td>
                                   </tr>
-                                  <tr>
+                                  {/* <tr>
                                     <td><b>Amount Paid : {val.orderDetails.totalAmount} Rs. </b></td>
-                                  </tr>
+                                  </tr> */}
                                 </MDBTableBody>
                               </MDBTable>
                             </span>

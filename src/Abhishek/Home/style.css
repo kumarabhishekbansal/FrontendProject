@@ -24,7 +24,6 @@ body{
     transform: translate(-50%, -10%); /* center the text vertically and horizontally */
     background-clip: text;
     -webkit-background-clip: text; /* for Safari */
-    text-fill-color: transparent;
     font-size: 1.5rem;
     font-weight: normal;
     font-style: italic;

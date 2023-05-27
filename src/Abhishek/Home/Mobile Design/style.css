@@ -68,3 +68,14 @@
     height: 1rem;
     border-radius: 50%;
 }
+
+
+
+/* media queries */
+
+@media screen and (max-width:1250px){
+    .main_mobile_div{
+        height: 120vh;
+        width: 45rem;
+    }
+}

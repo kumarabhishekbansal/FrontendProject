@@ -1,5 +1,6 @@
 import React from 'react'
 import "./NewHome.css"
+import "./newHomemediaqueries.css"
 import img1 from "../NewHomeImages/img1.jpg"
 import img2 from "../NewHomeImages/img2.jpg"
 import img3 from "../NewHomeImages/img3.jpg"

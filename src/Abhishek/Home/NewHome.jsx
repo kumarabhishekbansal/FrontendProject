@@ -1,20 +1,15 @@
 import React from "react";
 import "./NewHome.css";
+import "./newHomemediaqueries.css";
 import { Link } from "react-router-dom";
-import home1 from "../NewHomeImages/home-img.jpg";
+// import home1 from "../NewHomeImages/home-img.jpg";
 const NewHome = () => {
   return (
     <>
       {/* home section starts  */}
       <section className="home" id="home">
         <div className="content" data-aos="fade-right">
-          <h3
-            id="h3"
-            onmouseenter="document.getElementById('h3').style.color='red'"
-            onmouseleave="document.getElementById('h3').style.color='black'"
-          >
-            SAY GOODBYE TO PLANNING AND COOKING
-          </h3>
+          <h3 id="content_heading">SAY GOODBYE TO PLANNING AND COOKING</h3>
           <p
             id="p1"
             onmouseenter="document.getElementById('p1').style.color='green'"
@@ -27,7 +22,7 @@ const NewHome = () => {
             <button
               onmouseover="this.innerHTML='Welcome to my website'"
               onmouseleave="this.innerHTML='Get Started'"
-              className="btn"
+              className="linkbtn btn"
             >
               get started
             </button>
@@ -73,7 +68,7 @@ const NewHome = () => {
           </p>
           <Link to="/">
             <button
-              className="btn"
+              className=" linkbtn btn"
               onmouseover="this.innerHTML='A Word About Us'"
               onmouseleave="this.innerHTML='learn more'"
             >

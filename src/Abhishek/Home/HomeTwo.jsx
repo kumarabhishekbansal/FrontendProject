@@ -1,5 +1,6 @@
 import React from 'react'
 import "./NewHome.css"
+import "./newHomemediaqueries.css"
 import menu1 from "../NewHomeImages/menu1.jpg"
 import menu2 from "../NewHomeImages/menu2.jpg"
 import menu3 from "../NewHomeImages/menu3.jpg"
@@ -17,7 +18,7 @@ const HomeTwo = () => {
             <li className="btn  " data-src="../NewHomeImages/menu3.jpg">dinner</li>
             <li className="btn " data-src="../NewHomeImages/menu4.jpg">dessert</li>
           </ul>
-          <div className="row" data-aos="fade-right">
+          <div className="row" id="row" data-aos="fade-right">
             <div className="image" data-aos="fade-left">
               <img src={menu1} id="menu-img" alt="img" />
             </div>

@@ -1,8 +1,6 @@
 import React from "react";
 import "./style.css";
-import Bnavbar from "../bottom navigation/Bnavbar";
-import { Link } from "react-router-dom";
-import { Button } from "@mui/material";
+import "./newHomemediaqueries.css"
 import Work from "../Ques/Works/Work";
 import SideBar from "./SideBar";
 import NewHome from "./NewHome";

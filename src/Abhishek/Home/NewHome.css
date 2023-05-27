@@ -174,6 +174,10 @@ header #menu-bar{
     flex:1 1 39rem;
 }
 
+.home .content:hover{
+    color: red;
+}
+
 .home .content h3{
     color:#333;
     font-size: 6rem;
@@ -398,94 +402,3 @@ border-radius: 10%;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-/* media queries  */
-
-@media (max-width:991px){
-
-    html{
-        font-size: 55%;
-    }
-
-    .home::before,
-    .home::after{
-        display: none;
-    }
-
-}
-
-@media (max-width:768px){
-
-
-    header #menu-bar{
-        display: block;
-    }
-
-    header .navbar{
-        position: fixed;
-        top:8rem; left:0;
-        width:100%;
-        background:var(--yellow);
-        border-top: .2rem solid rgba(0,0,0,.1);
-        transform:scaleY(0);
-        transform-origin: top;
-        opacity: 0;
-    }
-
-    header .navbar ul{
-        flex-flow: column;
-        padding:2rem;
-    }
-
-    header .navbar ul li{
-        margin:1.5rem;
-        width: 100%;
-    }
-
-    header .navbar ul li a{
-        display: block;
-        color:#fff;
-        padding-left: 2rem;
-        border-left: .2rem solid #fff;
-        font-size: 2rem;
-    }
-
-    header .navbar ul li a:hover,
-    header .navbar ul li a.active{
-        color:#333;
-        border-color: #333;
-    }
-
-    .fa-times{
-        transform:rotate(180deg);
-    }
-
-    header .navbar.nav-toggle{
-        transform:scaleY(1);
-        opacity: 1;
-    }
-
-    .home .content{
-        text-align: center;
-    }
-
-    .home .content h3{
-        font-size: 4.5rem;
-    }
-
-    .order .row .image{
-        display: none;
-    }
-
-}
-
-@media (max-width:500px){
-
-    html{
-        font-size: 50%;
-    }
-
-    section{
-        padding:1rem 5%;
-        padding-top: 8.5rem;
-    }
-}

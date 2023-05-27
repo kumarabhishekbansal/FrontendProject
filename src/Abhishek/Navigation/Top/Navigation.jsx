@@ -32,6 +32,19 @@ const Navigation = () => {
     dispatch(reset());
     navigate("/");
   };
+
+  const handleaboutus=()=>{
+    window.scrollBy(0, window.innerHeight);
+  }
+
+  const handlecontactus=()=>{
+    window.scrollBy(0, 7*window.innerHeight);
+  }
+
+  const handlefaqus=()=>{
+    window.scrollBy(0, 2*window.innerHeight);
+  }
+
   const { cart, totalQuantity } = useSelector((state) => state.cart);
 
   useEffect(() => {
@@ -77,21 +90,21 @@ const Navigation = () => {
 
               <MDBNavbarItem className="navitem">
                 <MDBNavbarLink>
-                  <Link to="/about">About Us</Link>
+                  <Link onClick={handleaboutus}>About Us</Link>
                 </MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem className="navitem">
                 <MDBNavbarLink to="/faq">
                   {" "}
-                  <Link to="/faq">FAQ's</Link>
+                  <Link onClick={handlefaqus}>FAQ's</Link>
                 </MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem className="navitem">
                 <MDBNavbarLink to="/contact">
                   {" "}
-                  <Link to="/contact">Contact US</Link>
+                  <Link  onClick={handlecontactus}>Contact US</Link>
                 </MDBNavbarLink>
               </MDBNavbarItem>
 

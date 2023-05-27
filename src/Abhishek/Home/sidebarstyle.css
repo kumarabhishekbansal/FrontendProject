@@ -47,6 +47,26 @@
     width: 40rem;
 }
 
+@media screen and (max-width: 1250px) {
+  .homesidebar{
+    width: 100%;
+      font-size: 5rem;
+      height: 150vh;
+      padding: 6rem;
+  }
+  .textsidebar{
+    text-align: center;
+    color:black;
+  }
+  .textsidebar h2{
+font-size: 9rem;
+  }
+  .expbtn{
+    width: 40rem;
+    height: 10rem;
+  }
+}
+
 @media screen and (max-width: 1092px) {
     .imgphn{
         width: 30rem;
