@@ -1,5 +1,6 @@
 {
   "name": "navbarcode",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "proxy": "https://backend-project-kche.vercel.app/",
