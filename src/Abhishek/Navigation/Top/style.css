@@ -2,9 +2,10 @@ html{
   /* border:5px solid green; */
 }
 .navitem{
+  text-align: right;
     color: green;
     font-size: 1.5rem;
-    margin-left: 20rem;
+    margin-left: 10rem;
 }
 
 .navitem:hover{

@@ -107,3 +107,18 @@
     width: 2rem;
     height: 2rem;
 }
+@media screen and (max-width: 1250px) {
+    .menu_at_res_main{
+      height:560vh ;
+    }
+  }  
+
+  @media screen and (max-width: 425px) {
+    .div_for_image{
+        width: 100%;
+    }
+    .admin_res_parent{
+        margin-left: 0;
+        margin-right: 0;
+    }
+  }  

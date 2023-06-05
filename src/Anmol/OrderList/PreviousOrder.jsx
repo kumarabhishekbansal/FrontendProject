@@ -441,10 +441,11 @@ const PreviousOrder = () => {
           ) : (
             <>
               <EmptyOrder />
+              <Shop />
             </>
           )}
         </main>
-        <Shop />
+        
       </div>
     </>
   );
